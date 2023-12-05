@@ -1,0 +1,154 @@
+package main
+
+import "fmt"
+
+func main() {
+
+    x := 9
+    y := 11
+    if x > y {
+        fmt.Println("x é maior que y")
+    } else if x > y {
+        fmt.Println("y é maior que x")
+    } else {
+        fmt.Println("x e y são iguais")
+    }
+}
+package main
+
+import "fmt"
+
+func main() {
+
+    x := 4
+    y := 5
+    z := 7
+    if x < y && x < z {
+        fmt.Println("x é menor q y e z")
+    } else if y < x && y < z {
+        fmt.Println("y é menor q x e z")
+    } else if z < x && z < y {
+        fmt.Println("z é menor q x e y")
+    }
+
+}
+package main
+
+import "fmt"
+
+func main() {
+
+    i := 5
+    if i%2 == 0 {
+        fmt.Println("i é par")
+    } else if i%2 != 0 {
+        fmt.Println("i é ímpar")
+    }
+}
+package main
+
+import "fmt"
+
+func main() {
+
+    peso := 60.
+    altura := 1.70
+    imc := peso / (altura * altura)
+    if imc < 18.5 {
+        fmt.Println("abaixo do peso normal")
+    } else if imc >= 18.5 && imc < 24.9 {
+        fmt.Println("peso normal")
+    } else if imc >= 25 && imc < 29.9 {
+        fmt.Println("Obesidade classe 1")
+    }
+}
+package main
+
+import "fmt"
+
+func main() {
+
+    i := 15
+    if i%3 == 0 && i%5 == 0 {
+        fmt.Println("i é multiplo")
+    } else if i%3 != 0 && i%5 != 0 {
+        fmt.Println("i não é multiplo")
+    }
+}
+.𝖎𝖆𝖓𝖟𝖎𝖓𝕭$𝕭. — Yesterday at 10:47 PM
+package main
+
+import "fmt"
+
+func main() {
+
+    x := 6
+    y := 10
+    z := x * y
+    fmt.Println("z é igual a", z)
+}
+package main
+
+import "fmt"
+
+func main() {
+
+    salario := 5000.
+    aumento := salario * 0.1
+    novosalario := salario + aumento
+    fmt.Println("novo salario é ", novosalario)
+}
+package main
+
+import "fmt"
+
+func main() {
+    i := 6
+    switch i {
+    case 1:
+        fmt.Println("domingo")
+    case 2:
+        fmt.Println("segunda")
+    case 3:
+        fmt.Println("terça")
+    case 4:
+        fmt.Println("quarta")
+    case 5:
+        fmt.Println("quinta")
+    case 6:
+        fmt.Println("sexta")
+    case 7:
+        fmt.Println("sabado")
+    }
+}
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    fmt.Print("Digite o preço do produto: ")
+    var preco float64
+    fmt.Scanln(&preco)
+
+    desconto := 0.10
+    valorComDesconto := preco * (1 - desconto)
+
+    fmt.Printf("O valor com desconto de 10%% é: %.2f\n", valorComDesconto)
+}
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    fmt.Print("Digite o peso em quilos: ")
+    var pesoEmKilos float64
+    fmt.Scanln(&pesoEmKilos)
+
+    taxaConversao := 2.20462
+    pesoEmLibras := pesoEmKilos * taxaConversao
+    fmt.Printf("O peso em libras é: %.2f\n", pesoEmLibras)
+}
